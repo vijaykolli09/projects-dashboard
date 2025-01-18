@@ -156,7 +156,7 @@ const ProjectsTable = () => {
 
             <div className="pagination">
                 <button onClick={firstPage} disabled={currentPage === 1}>First</button>
-                <button onClick={prevPage} disabled={currentPage === 1}>Prev</button>
+                <button onClick={prevPage} disabled={currentPage === 1}>Previous</button>
                 <span>{currentPage} of {totalPages}</span>
                 <button onClick={nextPage} disabled={currentPage === totalPages}>Next</button>
                 <button onClick={lastPage} disabled={currentPage === totalPages}>Last</button>
