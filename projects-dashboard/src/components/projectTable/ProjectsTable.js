@@ -102,7 +102,7 @@ const ProjectsTable = () => {
         <div>
             <div className="search-sort-container">
                 {/* Search Input */}
-                <div style={{ marginBottom: "15px" }}>
+                <div className="search-container" style={{ marginBottom: "15px" }}>
                     <label htmlFor="search">Search: </label>
                     <input
                         id="search"

@@ -5,7 +5,7 @@ SortBy.module.css
     font-family: Arial, sans-serif;
     font-size: 14px;
     display: flex;
-    justify-content: flex-end; /* Aligns the content to the right */
+    justify-content: flex-end;
     margin-bottom: 15px;
     padding-right: 10px; 
     align-items: center;
@@ -23,14 +23,18 @@ SortBy.module.css
     border-radius: 4px;
     font-size: 14px;
     cursor: pointer;
+    padding: 8px;
+    width: 250px;
+    font-size: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
   
   .sortBySelect:focus {
     outline: none;
-    /* border-color: #007bff; */
     border-color: rgb(82, 112, 232);
-    /* background-color: rgb(82, 112, 232); */
-  /* color: #fff; */
   }
   
   .sortBySelect option {
@@ -41,13 +45,34 @@ SortBy.module.css
   /* CSS for rows that can be clicked */
 .clickableRow {
     cursor: pointer;
-    /* Adds pointer cursor */
 }
 
 /* CSS for rows that can't be clicked */
 .nonClickableRow {
     cursor: not-allowed;
-    /* Adds not-allowed cursor */
 }
 
 /* Search Input Styling */
+
+@media (max-width: 768px) {
+  .sortByContainer{
+    width:100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sortByLabel {
+    margin-right: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    width:20%
+  }
+  .sortBySelect {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 80%;
+  }
+}
