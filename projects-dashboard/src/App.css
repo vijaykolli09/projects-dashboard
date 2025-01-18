@@ -1,0 +1,275 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+/* table {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  border-collapse: collapse;
+
+}
+th, td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 16px;
+}
+thead {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  color: #273251;
+}
+thead tr{
+  padding:16px;
+}
+
+.pagination{
+  text-align: center;
+  width:30%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+button {
+  padding: 5px 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: Lexend Giga, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid rgb(82 112 232);
+    color: rgb(82 112 232);
+}
+
+button:disabled {
+  background-color: #728ddf;
+  color: #fff;
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: rgb(82 112 232);
+  color: #fff;
+}
+
+.logo {
+   font-size: 40px;
+   margin:20px 0 40px 20px;
+}
+.title {
+  font-size: 24px;
+  margin:20px 0 40px 20px;
+  text-transform: capitalize;
+} */
+
+
+/* General Table Styles */
+table {
+  background-color: rgb(255, 255, 255);
+  width: 90%; /* Reduced width for smaller screens */
+  margin: auto;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  border-collapse: collapse;
+  overflow-x: auto; /* Prevent horizontal overflow */
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 12px; /* Reduced padding for smaller screens */
+  font-size: 0.9rem; /* Scales with screen size */
+}
+
+thead {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #273251;
+}
+
+thead tr {
+  padding: 12px;
+}
+
+/* Pagination Styles */
+.pagination {
+  text-align: center;
+  width: 90%; /* Adjust width for smaller screens */
+  display: flex;
+  justify-content: center; /* Center align pagination buttons */
+  flex-wrap: wrap; /* Wrap buttons on smaller screens */
+  margin: 20px auto;
+  gap: 10px; /* Add space between buttons */
+  align-items: center;
+}
+
+button {
+  padding: 8px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: Lexend Giga, sans-serif;
+  font-size: 0.9rem; /* Scales with screen size */
+  cursor: pointer;
+  border: 1px solid rgb(82, 112, 232);
+  color: rgb(82, 112, 232);
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+button:disabled {
+  background-color: #728ddf;
+  color: #fff;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: rgb(82, 112, 232);
+  color: #fff;
+}
+
+/* Logo and Title Styles */
+.logo {
+  font-size: 2rem; /* Scales with screen size */
+  margin: 20px 0 20px 20px;
+}
+
+.title {
+  font-size: 1.5rem; /* Scales with screen size */
+  margin: 20px;
+  text-transform: capitalize;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  table {
+    width: 100%; /* Take full width on smaller screens */
+  }
+
+  th, td {
+    padding: 8px; /* Reduce padding */
+    font-size: 0.8rem; /* Smaller font size */
+  }
+
+  .pagination {
+    gap: 5px; /* Reduce gap between buttons */
+  }
+
+  button {
+    padding: 6px 15px; /* Adjust button size */
+    font-size: 0.8rem;
+  }
+
+  .logo {
+    font-size: 1.5rem; /* Smaller font for smaller screens */
+    margin: 10px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  th, td {
+    font-size: 0.7rem; /* Further reduce font size for small screens */
+    padding: 6px;
+  }
+
+  button {
+    padding: 5px 12px;
+    font-size: 0.7rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}
+
+
+#search {
+  padding: 8px;
+  width: 250px;
+  font-size: 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#search:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Search Container Styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-container label {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.search-sort-container {
+  margin-right: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: auto;
+}

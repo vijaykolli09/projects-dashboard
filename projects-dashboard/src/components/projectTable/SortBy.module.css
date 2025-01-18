@@ -1,0 +1,53 @@
+SortBy.module.css
+
+.sortByContainer {
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end; /* Aligns the content to the right */
+    margin-bottom: 15px;
+    padding-right: 10px; 
+    align-items: center;
+    width: 95%;
+  }
+  
+  .sortByLabel {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .sortBySelect {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .sortBySelect:focus {
+    outline: none;
+    /* border-color: #007bff; */
+    border-color: rgb(82, 112, 232);
+    /* background-color: rgb(82, 112, 232); */
+  /* color: #fff; */
+  }
+  
+  .sortBySelect option {
+    padding: 10px;
+  }
+  
+
+  /* CSS for rows that can be clicked */
+.clickableRow {
+    cursor: pointer;
+    /* Adds pointer cursor */
+}
+
+/* CSS for rows that can't be clicked */
+.nonClickableRow {
+    cursor: not-allowed;
+    /* Adds not-allowed cursor */
+}
+
+/* Search Input Styling */
