@@ -42,12 +42,10 @@ SortBy.module.css
   }
   
 
-  /* CSS for rows that can be clicked */
 .clickableRow {
     cursor: pointer;
 }
 
-/* CSS for rows that can't be clicked */
 .nonClickableRow {
     cursor: not-allowed;
 }
@@ -64,14 +62,14 @@ SortBy.module.css
   .sortByLabel {
     margin-right: 0px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     width:20%
   }
   .sortBySelect {
-    padding: 8px;
+    padding:6px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 12px;
     cursor: pointer;
     width: 80%;
     margin: 10px 0;
