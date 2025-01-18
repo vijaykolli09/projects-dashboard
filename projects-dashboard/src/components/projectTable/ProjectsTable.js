@@ -114,7 +114,7 @@ const ProjectsTable = () => {
                 </div>
 
                 {/* Sort By Dropdown */}
-                <div className={styles.sortByContainer}>
+                <div className={styles.sortByContainer} style={{ marginBottom: "15px" }}>
                     <label className={styles.sortByLabel} htmlFor="sortBy">Sort By: </label>
                     <select
                         id="sortBy"
@@ -156,9 +156,9 @@ const ProjectsTable = () => {
 
             <div className="pagination">
                 <button onClick={firstPage} disabled={currentPage === 1}>First</button>
-                <button onClick={prevPage} disabled={currentPage === 1}>Previous</button>
+                <button onClick={prevPage} disabled={currentPage === 1}><i class="fa fa-angle-left"></i></button>
                 <span>{currentPage} of {totalPages}</span>
-                <button onClick={nextPage} disabled={currentPage === totalPages}>Next</button>
+                <button onClick={nextPage} disabled={currentPage === totalPages}><i class="fa fa-angle-right"></i></button>
                 <button onClick={lastPage} disabled={currentPage === totalPages}>Last</button>
             </div>
 

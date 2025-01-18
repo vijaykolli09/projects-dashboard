@@ -129,6 +129,7 @@ thead {
   font-size: 1rem;
   font-weight: 700;
   color: #273251;
+  background-color: #eaebef;
 }
 
 thead tr {
@@ -173,8 +174,10 @@ button:hover:not(:disabled) {
 
 /* Logo and Title Styles */
 .logo {
-  font-size: 2rem; /* Scales with screen size */
-  margin: 20px 0 20px 20px;
+  font-size: 2rem;
+  padding: 20px 0 20px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
 }
 
 .title {
@@ -183,6 +186,21 @@ button:hover:not(:disabled) {
   text-transform: capitalize;
 }
 
+tbody tr:hover {
+  background-color: #f7f9fb; /* Add hover effect */
+}
+
+/* button.fa.fa-angle-right {
+  font-size: 42px;
+  color: rgb(82, 112, 232);
+}
+
+button.fa.fa-angle-right:hover {
+  background-color: #728ddf;
+  color: #fff;
+  opacity: 0.5;
+  cursor: not-allowed;
+} */
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   table {
@@ -205,7 +223,9 @@ button:hover:not(:disabled) {
 
   .logo {
     font-size: 1.5rem; /* Smaller font for smaller screens */
-    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
   }
 
   .title {

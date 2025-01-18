@@ -6,7 +6,7 @@ SortBy.module.css
     font-size: 14px;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding-right: 10px; 
     align-items: center;
     width: 95%;
@@ -68,11 +68,13 @@ SortBy.module.css
     width:20%
   }
   .sortBySelect {
-    padding: 5px 10px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
     cursor: pointer;
     width: 80%;
+    margin: 10px 0;
+    box-sizing: border-box;
   }
 }
