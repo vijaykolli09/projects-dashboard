@@ -1,6 +1,5 @@
 import './App.css';
 import ProjectsTable from './components/projectTable/ProjectsTable';
-import Pagination from './components/Pagination';
 import fetchRecords from './services/api';
 import { useState,useEffect } from 'react';
 import Navbar from './components/Navbar';
@@ -23,7 +22,6 @@ function App() {
     <div className="container">
       <Navbar/>
       <ProjectsTable projectsAll = {records}/>
-      <Pagination/>
     </div>
   );
 }

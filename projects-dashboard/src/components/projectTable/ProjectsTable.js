@@ -155,11 +155,11 @@ const ProjectsTable = () => {
             </table>
 
             <div className="pagination">
-                <button onClick={firstPage} disabled={currentPage === 1}>First</button>
+                <button onClick={firstPage} disabled={currentPage === 1}><i class="fa fa-angle-double-left"></i></button>
                 <button onClick={prevPage} disabled={currentPage === 1}><i class="fa fa-angle-left"></i></button>
                 <span>{currentPage} of {totalPages}</span>
                 <button onClick={nextPage} disabled={currentPage === totalPages}><i class="fa fa-angle-right"></i></button>
-                <button onClick={lastPage} disabled={currentPage === totalPages}>Last</button>
+                <button onClick={lastPage} disabled={currentPage === totalPages}><i class="fa fa-angle-double-right"></i></button>
             </div>
 
             {/* Show the Modal if modalOpen is true */}
